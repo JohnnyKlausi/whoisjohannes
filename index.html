@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="deu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+    <title>Who is Johannes</title>
+</head>
+
+<body>
+
+    <div class="top-container" id="titleLogo">
+        <img src="images/title.png"></img>
+    </div>
+
+    <div class="the-header" id="myHeader">
+        <!--
+        <div class="the-header-content">
+            <b data-i18n="header_message"></b>
+        </div>-->
+        <div class="the-header-content">
+            <a data-i18n="nav_button_me" onclick="adjustScroll('me', 0)"></a>
+            <a onclick="adjustScroll('skillsegment', 0)">skills</a>
+            <div class="dropdown">
+                <button data-i18n="nav_button_projects" class="dropbtn" onclick="adjustScroll('projects', 50)">Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="header-dropdown">
+                    <a onclick="adjustScroll('projectA', 200)">Projekt 1</a>
+                    <a onclick="adjustScroll('projectB', 200)">Projekt 2</a>
+                    <a onclick="adjustScroll('thisPage', 200)">This Page</a>
+                </div>
+            </div>
+            <a data-i18n="nav_button_contact" onclick="adjustScroll('contact', 0)"></a>
+            <ul style="text-align: right">
+                <img src="icons/ger.png" class="lang-icon" alt="deutsch" href="index.html"
+                    onclick="changeLanguage('deu')"></img>
+                <img src="icons/uk_us.png" class="lang-icon" alt="english" href="index.html"
+                    onclick="changeLanguage('en')"></img>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="content" style="padding-top: 200px;">
+            <p data-i18n="welcome_message"></p>
+        </div>
+
+        <div class="content" id="me">
+            <h2 data-i18n="about_me_headline"></h2>
+            <p data-i18n="about_me_text1"></p>
+            <p data-i18n="about_me_text2"></p>
+            <p data-i18n="about_me_text3"></p>
+            <p data-i18n="about_me_text4"></p>
+            <p data-i18n="about_me_text5"></p>
+        </div>
+
+        <div class="content" id="spirit">
+            <p data-i18n="about_me_text6"></p>
+            <p data-i18n="about_me_text7"></p>
+        </div>
+
+        <h2 class="content">Hard facts</h2>
+        <div class="hardfactscontainer" class="hardfacts">
+            <div class="listcontainer_left" id="hardfacts">
+                <div data-i18n="hardfacts1_headline" style="padding: 20px;"></div>
+                <li data-i18n="hardfacts1_list1"></li> 
+                <li data-i18n="hardfacts1_list2"></li>
+                <li data-i18n="hardfacts1_list3"></li>
+                <li data-i18n="hardfacts1_list4"></li>
+            </div>
+            <div class="listcontainer_right">
+                <div data-i18n="hardfacts2_headline" style="padding: 20px;"></div>
+                <li data-i18n="hardfacts2_list1"></li>    
+                <li data-i18n="hardfacts2_list2"></li>  
+                <li data-i18n="hardfacts2_list3"></li>             
+                
+            </div>
+        </div>
+        <div class="hardfactscontainer" class="hardfacts">
+            <div class="listcontainer_left" id="hardfacts">
+                <div data-i18n="hardfacts3_headline" style="padding: 20px;"></div>
+                <li data-i18n="hardfacts3_list1"></li> 
+                <li data-i18n="hardfacts3_list2"></li>
+                <li data-i18n="hardfacts3_list3"></li>
+                <li data-i18n="hardfacts3_list4"></li>
+            </div>
+            <div class="listcontainer_right">
+                <div data-i18n="hardfacts4_headline" style="padding: 20px;"></div>
+                <li data-i18n="hardfacts4_list1"></li>    
+                <li data-i18n="hardfacts4_list2"></li>  
+                <li data-i18n="hardfacts4_list3"></li>  
+                <li data-i18n="hardfacts4_list4"></li>
+            </div>
+        </div>
+
+        <div class="content" id="skillsegment">
+            <h2 data-i18n="about_me_headline"></h2>
+            <p data-i18n="about_me_text"></p>
+        </div>
+
+        <div class="container">
+            <div class="skillcontainer" onmouseover="addFill(skillbar1), addFill(skillbar2)"
+                onmouseout="removeFill(skillbar1), removeFill(skillbar2)">
+                <div class="mainskill">
+                    <div class="skill">
+                        <div class="skill-name">1</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" style="max-width:10%">a</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="smoothaccordion">
+                    <div>
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="skill-name">2 asdasssssssssssssssssssssssssssssssssssd</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="100%" style="max-width:90%" id="skillbar1">b</div>
+                                </div>
+                                <div class="skill-name">3</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="100%" style="max-width:90%" id="skillbar2">c</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillcontainer" onmouseover="addFill(skillbar3), addFill(skillbar4)"
+                onmouseout="removeFill(skillbar3), removeFill(skillbar4)">
+                <div class="mainskill">
+                    <div class="skill">
+                        <div class="skill-name">asdasd</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="100%" style="max-width:90%">a</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="smoothaccordion">
+                    <div>
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="skill-name">sss asdasssssssssssssssssssssssssssssssssssd</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="100%" style="max-width:90%" id="skillbar3">b</div>
+                                </div>
+                                <div class="skill-name">aaassss</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="100%" style="max-width:90%" id="skillbar4">c</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="skillcontainer" onmouseover="addFill(skillbar5), addFill(skillbar6)"
+                onmouseout="removeFill(skillbar5), removeFill(skillbar6)">
+                <div class="mainskill">
+                    <div class="skill">
+                        <div class="skill-name">1</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" style="max-width:10%">a</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="smoothaccordion">
+                    <div>
+                        <div class="skills">
+                            <div class="skill">
+                                <div class="skill-name">2 asdasssssssssssssssssssssssssssssssssssd</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="100%" style="max-width:90%" id="skillbar5">b</div>
+                                </div>
+                                <div class="skill-name">3</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="100%" style="max-width:90%" id="skillbar6">c</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skillcontainer" onmouseover="addFill(skillbar7), addFill(skillbar8)"
+                onmouseout="removeFill(skillbar7), removeFill(skillbar8)">
+                <div class="mainskill">
+                    <div class="skill">
+                        <div class="skill-name">asdasd</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="100%" style="max-width:90%">a</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="smoothaccordion">
+                    <div>
+                        <div class="skills">
+                            <div class="skill-name">sss asdasd</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="100%" style="max-width:90%" id="skillbar7">b</div>
+                            </div>
+                            <div class="skill-name">aaassss</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="100%" style="max-width:90%" id="skillbar8">c</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content" id="projects">
+            <h2>Projects</h2>
+            <div class="projectsButton" id="projectsNav">
+                <a class="coolButton" onclick="adjustScroll('projectA', 200)">Project A</a>
+                <a class="coolButton" onclick="adjustScroll('projectB', 200)">Project B</a>
+            </div>
+
+            <div class="bigHeadline" id="projectA">
+                <h3>Project A</h3>
+                <p>Description of Project A.eirmod tempor invidunt ut labore et dolore magna aliquyam </br>
+                    erat, </br>
+                    sed </br>
+                    diam voluptua. At </br>
+                    vero eos et </br>
+                    accusam et justo duo </br>
+                    dolores et ea </br>
+                    rebum. Stet clita </br>
+                    kasd gubergren, </br>
+                    no sea takimata </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    sit </br>
+                    </br></br></br></br></br></br></br></br></br></br>amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labor</p>
+            </div>
+
+            <div class="bigHeadline" id="projectB">
+                <h3>Project B</h3>
+                <p>Description of Project B.eirmod tempor invidunt ut labore et dolore magna aliquyam </br>
+                    erat, </br>
+                    sed </br>
+                    diam voluptua. At </br>
+                    vero eos et </br>
+                    accusam et justo duo </br>
+                    dolores et ea </br>
+                    rebum. Stet clita </br>
+                    kasd gubergren, </br>
+                    no sea takimata </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+
+                    sit </br>
+                    </br></br></br></br></br></br></br></br></br></br>amet, consetetur sadipscing elitr, sed diam nonumy
+                    eirmod tempor invidunt ut labor</p>
+            </div>
+
+            <div id="thisPage">
+                <h2>About This Page</h2>
+                <p>Write something about myself here. </br>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</br>
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</br>
+                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                    gubergren, </br>
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, </br>
+                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt </br>
+                    ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos </br>
+                    et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no </br>
+                    sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor </br>
+                    sit amet, consetetur sadipscing elitr, sed diam nonumy </br>
+                    eirmod tempor invidunt ut labore et dolore magna aliquyam </br>
+                    erat, </br>
+                    sed </br>
+                    diam voluptua. At </br>
+                    vero eos et </br>
+                    accusam et justo duo </br>
+                    dolores et ea </br>
+                    rebum. Stet clita </br>
+                    kasd gubergren, </br>
+                    no sea takimata </br>
+                    anctus est Lorem ipsum dolor </br>
+                    sit </br>
+                    amet. </br>
+                    Lorem </br>
+                    ipsum </br>
+                    dolor </br>
+                    sit </br>
+                    </br></br></br></br></br></br></br></br></br>
+                    </br>amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor
+                </p>
+            </div>
+        </div>
+
+        <div id="endOfProjects"></div>
+
+        <div class="content" id="contact">
+            <h2>contact</h2>
+            <p>Write something about myself here. </br>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</br>
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</br>
+                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                </br>
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, </br>
+                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt </br>
+                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos </br>
+                et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no </br>
+                sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor </br>
+                sit amet, consetetur sadipscing elitr, sed diam nonumy </br>
+                eirmod tempor invidunt ut labore et dolore magna aliquyam </br>
+                erat, </br>
+                sed </br>
+                diam voluptua. At </br>
+                vero eos et </br>
+                accusam et justo duo </br>
+                dolores et ea </br>
+                rebum. Stet clita </br>
+                kasd gubergren, </br>
+                no sea takimata </br>
+                anctus est Lorem ipsum dolor </br>
+                sit </br>
+                amet. </br>
+                Lorem </br>
+                ipsum </br>diam voluptua. At </br>
+                vero eos et </br>
+                accusam et justo duo </br>
+                dolores et ea </br>
+                rebum. Stet clita </br>
+                kasd gubergren, </br>
+                no sea takimata </br>
+                anctus est Lorem ipsum dolor </br>
+                sit </br>
+                amet. </br>
+                Lorem </br>
+                ipsum </br>diam voluptua. At </br>
+                vero eos et </br>
+                accusam et justo duo </br>
+                dolores et ea </br>
+                rebum. Stet clita </br>
+                kasd gubergren, </br>
+                no sea takimata </br>
+                anctus est Lorem ipsum dolor </br>
+                sit </br>
+                amet. </br>
+                Lorem </br>
+                ipsum </br>
+                dolor </br>
+                sit </br>
+                </br></br></br></br></br></br></br></br></br>
+                </br>amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labor
+            </p>
+        </div>
+
+        <script src="mySiteFunctions.js"></script>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Website Mebsite. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

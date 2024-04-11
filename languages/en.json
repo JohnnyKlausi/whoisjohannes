@@ -1,0 +1,52 @@
+{
+    "header_message": "whoisjohannes.lol",
+    "nav_button_me": "me",
+    "nav_button_projects": "projects",
+    "nav_button_contact": "contact",
+    
+    "welcome_message": "Welcome to whoisjohannes.lol\nOn this page I would like to introduce myself in terms of my personality, my interests and my projects.",
+    
+    "about_me_headline": "Who am I?",    
+    "about_me_text1": "My name is Johannes Reitmayer, I am 34 years old and I have a Bachelor of Arts degree in interactive media*. I have many interests and am a film, music and art enthusiast, a musician myself (guitar, drums, producing) and have had an eventful life up to this point. Born in the Augsburg countryside, I had a happy childhood on the farm and soccer field. In my youth I developed an affinity for computers and computer games and started to write/develop scripts, maps and mods for games like Counter Strike 1.6 or Age of Empires 2. With my first band it was unfortunately not enough for gigs, but if not good music, we at least had a good time.\n",
+    "about_me_text2": "After middle school, I made an apprenticeship as an electrician and then completed my A-levels at Bayernkolleg in Augsburg. During my time at Bayernkolleg, I developed a fascination for literature and art. My taste in film and music also developed to a more intense level and became more sophisticated there. I continued to work as an electrician during the vacations and my knowledge of basic electronics and practical manual skills also came in handy in various DIY projects. ",
+    "about_me_text3": "After graduating from Bayernkolleg, I began studying comparative literature, which I did not complete due to a lack of prospects. Nevertheless, I benefited and continue to benefit from this time, as I became acquainted with many important works of literature, learned how to deal with literature and made friendships that continue to this day.", 
+    "about_me_text4": "After a period on the job market (as a film projectionist and industrial electrician), I decided to go back to university and began my dream degree course in Interactive Media. This course offered me all the aspects I wanted: creativity on the one hand, but also technology and therefore perspective. I learned the basics of all common programming languages and tools (more on this under *Skills*) and gained an insight into effective processes in the industry through project work and internships/working student jobs.",
+    "about_me_text5": "*Due to an organizational error, I still have to take an exam (media law) to complete the degree course.",
+    "about_me_text6": "I like solving problems. Whether in chess, PC games or board games; I like to strategize to solve or win puzzles. I also enjoy math/code-based problems on YouTube and follow channels that regularly get me thinking. Being a musician and playing sports has taught me perseverance and persistence to achieve goals. That's why I also enjoy programming, because those qualities benefit me there.",
+    "about_me_text7": "Adjectives I think others might use to describe me include: open, helpful, communicative, honest, direct, flexible, creative, funny, down-to-earth, empathetic. Unfortunately, my seriousness suffers a little from a few of these qualities. However, I am aware of this and think that with increasing experience and competence I will also acquire this quality in the imminent future",
+
+    "hardfacts1_headline": "Cinema",
+    "hardfacts2_headline": "Games",
+    "hardfacts3_headline": "Music",
+    "hardfacts4_headline": "Genres",
+    "hardfacts5_headline": "Sports",
+    "hardfacts1_list1": "Arthaus",
+    "hardfacts1_list2": "Horror",
+    "hardfacts1_list3": "Trash",
+    "hardfacts1_list4": "Ridiculous Comedy",
+    "hardfacts2_list1": "Schach",
+    "hardfacts2_list2": "Boardgames",
+    "hardfacts2_list3": "PC-Games",
+    "hardfacts3_list1": "Concerts",
+    "hardfacts3_list2": "Vinyl records",
+    "hardfacts3_list3": "Guitarist",
+    "hardfacts3_list4": "Drummer",
+    "hardfacts3_list5": "Music produktion",
+    "hardfacts3_list6": "Rap",
+    "hardfacts3_list7": "Foley-Sound",
+    "hardfacts3_list8": "Music theory",
+    "hardfacts3_list9": "Songwriting",
+    "hardfacts4_list1": "Extreme metal",
+    "hardfacts4_list2": "Oldschool HipHop",
+    "hardfacts4_list3": "Jazz",
+    "hardfacts4_list4": "Rock",
+    "hardfacts4_list5": "Blues, Funk & Soul",
+    "hardfacts5_list1": "Soccer",
+    "hardfacts5_list2": "Bouldern",
+    "hardfacts5_list3": "Jogging",
+    "hardfacts5_list4": "Badminton",
+
+
+
+    "footer_text": "© 2024 All rights reserved."
+}
