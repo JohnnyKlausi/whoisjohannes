@@ -1,31 +1,6 @@
 main {
 }
 
-@media screen and (max-width:767px) {
-    #titleLogo img {
-        max-width: 100%; /* header Bild darf nicht größer 100% sein */
-        height: auto;
-    }
-
-    .the-header-content {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: #ffffff;
-    }
-
-    .the-header a {
-        float: none;
-        display: inline-block;
-        padding: 1px; /* Reduce padding for smaller screens */
-    }
-
-    .lang-icon {
-        display: inline-block;
-        margin: 5px; /* Add some spacing between the language icons */
-    }
-}
-
 body {
     margin: 0;
     font-family: "Courier New,Courier","Lucida Sans Typewriter","Lucida Typewriter",monospace;
@@ -68,15 +43,6 @@ footer {
 .the-header a:hover {
     background: #ddd;
     color: #000000;
-    cursor: pointer;
-}
-
-.lang-icon {
-    position: relative;
-    width: 30px;
-    border-radius: 50%;
-    border: #000000;
-    border-style: solid;    
     cursor: pointer;
 }
 
@@ -137,6 +103,42 @@ footer {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+@media screen and (max-width:767px) {
+    #titleLogo img {
+        max-width: 100%; /* header Bild darf nicht größer 100% sein */
+        height: auto;
+    }
+
+    .the-header-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #ffffff;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        
+    }
+
+    .the-header a {
+        float: none;
+        display: inline-block;
+    }
+
+    .lang-icon {
+        display: inline-block;
+        margin: 5px; /* Add some spacing between the language icons */
+    }
+}
+
+.lang-icon {
+    position: relative;
+    width: 30px;
+    border-radius: 50%;
+    border: #000000;
+    border-style: solid;    
+    cursor: pointer;
 }
 
 .content {
