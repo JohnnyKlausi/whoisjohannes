@@ -1,6 +1,13 @@
 main {
 }
 
+@media screen and (max-width:767px) {
+    #titleLogo img {
+        max-width: 100%; /* header Bild darf nicht größer 100% sein */
+        height: auto;
+    }
+}
+
 body {
     margin: 0;
     font-family: "Courier New,Courier","Lucida Sans Typewriter","Lucida Typewriter",monospace;
