@@ -1,5 +1,4 @@
-main {    
-    color: #c913aa;
+main {
 }
 
 @media screen and (max-width:767px) {
@@ -10,15 +9,15 @@ main {
 
     .the-header-content {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        color: #c913aa;
+        color: #ffffff;
     }
 
     .the-header a {
         float: none;
         display: inline-block;
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 1px; /* Reduce padding for smaller screens */
     }
 
     .lang-icon {
@@ -30,7 +29,7 @@ main {
 body {
     margin: 0;
     font-family: "Courier New,Courier","Lucida Sans Typewriter","Lucida Typewriter",monospace;
-    background-color: #c913aa;
+    background-color: #9e9e9e;
 }
 
 footer {
@@ -95,7 +94,7 @@ footer {
 
 .dropdown {
     float: left;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .dropdown .dropbtn {
