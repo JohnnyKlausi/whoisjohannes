@@ -22,7 +22,7 @@ footer {
 
 .the-header {
     overflow: visible;
-    background-color: #b3009b; /* #353535*/
+    background-color: #353535;
     width: 100%;
     position: absolute;
     opacity: 1;
@@ -31,36 +31,40 @@ footer {
 
 .the-header a {
     /* Navigation options */
-    float: left;
+    /* float: left; */
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px;
-    text-decoration: none;
     font-size: 17px;
+    width: auto;/*width: 30%; will ich, aber das erzeugt das Problem mit dem Background*/
+}
+
+.the-header c {
+    width: 10%;
+}
+
+.the-header .dropbtn {
+    width: 100%;
 }
 
 .the-header a:hover {
-    background: #ddd;
+    background: #ffffff;
     color: #000000;
     cursor: pointer;
 }
 
-.the-header b {
-    /* TEXT */
-    padding-left: 1%;
-    font-size: 36px;
-    color: #000000;
-}
-
 .the-header-content {
+    display: flex;
+    justify-content: space-between;
     padding-left: 15%;
     padding-right: 15%;
+    align-items: center;
 }
 
 .dropdown {
-    float: left;
-    overflow: visible;
+    position: relative;
+    width: auto;
 }
 
 .dropdown .dropbtn {
@@ -76,14 +80,14 @@ footer {
 }
 
 .dropbtn:hover {
-    background: #ddd;
+    background: #ffffff;
     color: #000000;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     box-shadow: 10px 8px 16px 0px #000000;
     z-index: 1;
 }
@@ -92,9 +96,6 @@ footer {
     float: none;
     color: black;
     padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
 }
 
 .dropdown-content a:hover {
@@ -105,6 +106,20 @@ footer {
     display: block;
 }
 
+.lang-icon {
+    position: relative;
+    width: 30px;
+    border-radius: 50%;
+    border: #000000;
+    border-style: solid;    
+    cursor: pointer;
+}
+
+.lang-ul {
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width:767px) {
     #titleLogo img {
         max-width: 100%; /* header Bild darf nicht größer 100% sein */
@@ -113,32 +128,35 @@ footer {
 
     .the-header-content {
         display: flex;
-        flex-direction: row;
         align-items: center;
-        color: #ffffff;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        
+        padding-left: 0;
     }
 
-    .the-header a {
+    .the-header-content a {
+        font-size: 14px;
+    }
+
+    .dropbtn{
+        overflow: visible;
+        font-size: 14px !important;
+    }
+
+    /*.the-header a {
         float: none;
         display: inline-block;
     }
 
     .lang-icon {
-        display: inline-block;
-        margin: 5px; /* Add some spacing between the language icons */
-    }
-}
+        border: #ff0000;
+        border-style: solid;
+    }*/
 
-.lang-icon {
-    position: relative;
-    width: 30px;
-    border-radius: 50%;
-    border: #000000;
-    border-style: solid;    
-    cursor: pointer;
+    .lang-ul {
+        position: absolute;
+        top: 50%; 
+        transform: translateY(-50%);
+        right: 0;
+    }
 }
 
 .content {
